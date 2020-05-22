@@ -540,7 +540,7 @@ static void gatts_mtu_req(const uint8_t *pdu, uint16_t len, gpointer user_data)
     {
         opt_mtu = mtu;
         olen = enc_mtu_resp(mtu, opdu, plen);
-	cmd_status(0, NULL);
+        cmd_status(0, NULL);
     }
     else {
         // send NOT SUPPORTED
